@@ -24,6 +24,7 @@
     const previousSong = album.songs[previousSongIndex];
     player.playPause(previousSong);
   });
+<<<<<<< HEAD
 
     $('#time-control input').on('input', function (event) {
       player.skipTo(event.target.value);
@@ -36,4 +37,6 @@
     $('#time-control .current-time').text( currentTime );
     $('#time-control input').val(percent);
   }, 1000);
+=======
+>>>>>>> 44360f4afea42469312564f7fdecb884e7b12910
 }
