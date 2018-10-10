@@ -2,7 +2,7 @@
   $('button#play-pause').on('click', function() {
     player.playPause();
     $(this).attr('playState', player.playState);
-    $('#time-control .total-time').text( player.prettyTime(player.getDuration()) );
+  //  $('#time-control .total-time').text( player.prettyTime(player.getDuration()) );
 
   });
 
@@ -39,13 +39,13 @@
     const currentTime = player.getTime();
     const duration = player.getDuration();
     const percent = (currentTime / duration) * 100;
-    $('#time-control .current-time').text( player.prettyTime(currentTime) );
+    //$('#time-control .current-time').text( player.prettyTime(currentTime) );
 
     $('#time-control input').val(percent);
   }, 1000);
   function setSong(song) {
      player.playPause(song);
-     $('#time-control .total-time').text( player.prettyTime(song.duration));
+    // $('#time-control .total-time').text( player.prettyTime(song.duration));
    };
 
 
